@@ -4,6 +4,13 @@
  */
 package generismgs;
 
+import java.time.LocalDate;
+import java.time.Month;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
 /**
  *
  * @author USER
@@ -14,24 +21,30 @@ public class GeneriSMGS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Crear un par para almacenar la edad y el nombre de una persona
-        Pair<Integer, String> ageNamePair = new Pair<>(30, "Juan Pérez");
-
-        // Crear un par para almacenar la EPS y la fecha de nacimiento
-        Pair<String, String> epsBirthDatePair = new Pair<>("SaludTotal", "1994-05-23");
-
-        // Imprimir los pares
-        System.out.println("Edad y Nombre: " + ageNamePair);
-        System.out.println("EPS y Fecha de Nacimiento: " + epsBirthDatePair);
-
+        
+        //edad y nombre 
+        Pair<Integer, String> ageName = new Pair<>(20,"Raul Lopéz");
+        
+        //EPS y fecha 
+        Pair<String, LocalDate> epsBirthDate = new Pair<>("Sura", LocalDate.of(2004, 2, 15));
+        
         // Almacenar los datos en una "base de datos" (puede ser un arreglo o una lista)
-        Pair[] userDatabase = new Pair[2];
-        userDatabase[0] = ageNamePair;
-        userDatabase[1] = epsBirthDatePair;
-
+        List<Pair<?, ?>> userDatabase = new ArrayList<>();
+        userDatabase.add(ageName);
+        userDatabase.add(epsBirthDate);
+        
+        
+        userDatabase.add(new Pair<>(23, "Camilo Suarez"));
+        userDatabase.add(new Pair<>("Nueva EPS", LocalDate.of(1997, 8, 13)));
         // Mostrar los datos almacenados
+        System.out.println("Datos base");
         for (Pair<?, ?> pair : userDatabase) {
             System.out.println(pair);
+            //System.out.println("Nombre: " + pair.getSecond());
+            //System.out.println("Edad: " + pair.getFirst() +"Años");
+            //System.out.println("EPS: " + pair.getFirst());
+            //System.out.println("Fecha de nacimiento: : " + pair.getSecond());
+            
         }
     
     }
