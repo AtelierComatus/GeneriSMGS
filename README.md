@@ -10,3 +10,8 @@ Función en consola
 
 
 
+
+Evidencia de uso de 3 datos distintos:
+
+![image](https://github.com/user-attachments/assets/8d51302e-ce18-40b5-a48b-53291fafafeb)
+
