@@ -1,3 +1,9 @@
 # GeneriSMGS
 Ejercicio de clases genericas
-![image](https://github.com/user-attachments/assets/323e814c-8342-4bc9-87a6-d842a3482eb1)
+
+
+
+Función en consola
+![image](https://github.com/user-attachments/assets/0b70788f-6d98-4fe7-9947-ddf45567edeb)
+
+
